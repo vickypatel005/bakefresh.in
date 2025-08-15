@@ -1,0 +1,639 @@
+@use "../base/variable.scss" as variable;
+@use "../base/mixins.scss" as mixins;
+
+.catering_section {
+    padding-bottom: 190px;
+    overflow: hidden;
+
+    .catering_area {
+        position: relative;
+
+        .catering_left_area {
+            padding: 80px 0;
+
+            h5 {
+                font-size: 57px;
+                color: variable.$black_color;
+                font-family: "magzo", serif;
+                padding-bottom: 25px;
+
+                span {
+                    color: variable.$primary_color;
+                }
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 23px;
+                font-family: "lato", sans-serif;
+                color: variable.$gray_shade4;
+                padding-bottom: 30px;
+            }
+
+            .btn-primary {
+                width: 200px;
+                height: 49px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 16px;
+            }
+        }
+
+        .catering_right_area {
+            position: relative;
+
+            .cake_catering {
+                width: 442px;
+                height: 442px;
+                border-radius: 100%;
+                overflow: hidden;
+                position: absolute;
+                transition: transform 0.3s ease;
+                right: -44px;
+                top: 100px;
+                z-index: 1;
+
+                &:hover {
+                    transform: scale(1.02);
+                }
+            }
+
+            .catering_bg {
+                max-width: 650px;
+                position: absolute;
+                top: 0;
+                // right: -126px;
+                right: -300px;
+            }
+
+            .right_red_balls_1 {
+                position: absolute;
+                right: -230px;
+                bottom: -300px;
+                // right: -169px;
+                // bottom: -294px;
+
+                transition: transform 0.2s ease;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+            .right_red_balls_2 {
+                position: absolute;
+                right: -256px;
+                bottom: -356px;
+                // right: -189px;
+                // bottom: -353px;
+                transition: transform 0.2s;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+            .right_red_balls_3 {
+                position: absolute;
+                right: -260px;
+                bottom: -448px;
+                // right: -192px;
+                // bottom: -428px;
+                transition: transform 0.2s;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+            .right_red_balls_4 {
+                position: absolute;
+                right: -230px;
+                bottom: -530px;
+                // right: -169px;
+                // bottom: -497px;
+                transition: transform 0.2s;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+            .right_red_balls_5 {
+                position: absolute;
+                right: -190px;
+                bottom: -567px;
+                // right: -137px;
+                // bottom: -555px;
+                transition: transform 0.2s;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+            .right_red_balls_6 {
+                position: absolute;
+                right: -130px;
+                bottom: -580px;
+                // right: -85px;
+                // bottom: -593px;
+                transition: transform 0.2s;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+
+
+/* Above 1920 desktop */
+@media (min-width: 1920px) {}
+
+/* 1680 desktop */
+@media (min-width: 1680px) and (max-width: 1919px) {}
+
+/* 1600 desktop */
+@media (min-width: 1600px) and (max-width: 1679px) {}
+
+/* Above 1400 and Below 1599 Desktop*/
+@media (min-width: 1400px) and (max-width: 1599px) {}
+
+/* 1300 desktop only */
+@media (min-width: 1300px) and (max-width: 1399px) {
+    .catering_section {
+        padding-bottom: 125px;
+
+        .catering_area {
+            .catering_right_area {
+                .cake_catering {
+                    width: 400px;
+                    height: 400px;
+                    top: 126px;
+                    left: 151px;
+                }
+
+                .catering_bg {
+                    width: 530px;
+                    top: 0;
+                    right: -104px;
+                }
+
+                .right_red_balls_1 {
+                    right: -86px;
+                    bottom: -292px;
+                }
+
+                .right_red_balls_2 {
+                    right: -89px;
+                    bottom: -356px;
+                }
+
+                .right_red_balls_3 {
+                    right: -83px;
+                    bottom: -426px;
+                }
+
+                .right_red_balls_4 {
+                    right: -68px;
+                    bottom: -501px;
+                }
+
+                .right_red_balls_5 {
+                    right: -18px;
+                    bottom: -560px;
+
+                }
+
+                .right_red_balls_6 {
+                    right: 46px;
+                    bottom: -580px;
+                }
+            }
+
+            .catering_left_area {
+                padding: 120px 0 80px 0;
+            }
+        }
+    }
+}
+
+/* 1200 desktop only */
+@media (min-width: 1200px) and (max-width: 1299px) {
+    .catering_section {
+        padding-bottom: 125px;
+
+        .catering_area {
+            .catering_right_area {
+                .cake_catering {
+                    width: 400px;
+                    height: 400px;
+                    top: 126px;
+                    left: 151px;
+                }
+
+                .catering_bg {
+                    width: 530px;
+                    top: 0;
+                    right: -104px;
+                }
+
+                .right_red_balls_1 {
+                    right: -86px;
+                    bottom: -292px;
+                }
+
+                .right_red_balls_2 {
+                    right: -89px;
+                    bottom: -356px;
+                }
+
+                .right_red_balls_3 {
+                    right: -83px;
+                    bottom: -426px;
+                }
+
+                .right_red_balls_4 {
+                    right: -68px;
+                    bottom: -501px;
+                }
+
+                .right_red_balls_5 {
+                    right: -18px;
+                    bottom: -560px;
+
+                }
+
+                .right_red_balls_6 {
+                    right: 46px;
+                    bottom: -580px;
+                }
+            }
+
+            .catering_left_area {
+                padding: 120px 0 80px 0;
+            }
+        }
+    }
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .catering_section {
+        padding-bottom: 40px;
+
+        .catering_area {
+            .catering_right_area {
+                .cake_catering {
+                    width: 303px;
+                    height: 303px;
+                    top: 110px;
+                    left: 99px;
+                }
+
+                .catering_bg {
+                    width: 431px;
+                    top: 0px;
+                    right: -8px;
+                }
+
+                .right_red_balls_1 {
+                    right: 7px;
+                    bottom: -267px;
+                    width: 35px;
+                }
+
+                .right_red_balls_2 {
+                    right: -1px;
+                    bottom: -328px;
+                }
+
+                .right_red_balls_3 {
+                    right: 8px;
+                    bottom: -386px;
+                    width: 27px;
+                }
+
+                .right_red_balls_4 {
+                    right: 31px;
+                    bottom: -436px;
+                    width: 27px;
+                }
+
+                .right_red_balls_5 {
+                    right: 72px;
+                    bottom: -473px;
+                    width: 24px;
+                }
+
+                .right_red_balls_6 {
+                    right: 109px;
+                    bottom: -495px;
+                    width: 21px;
+                }
+            }
+
+            .catering_left_area {
+                padding: 120px 0 80px 0;
+
+                h5 {
+                    font-size: 46px;
+                    padding-bottom: 20px;
+                }
+
+                p {
+                    padding-bottom: 20px;
+                }
+
+                .btn-primary {
+                    width: 180px;
+                    height: 46px;
+                }
+            }
+        }
+    }
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+    .catering_section {
+        padding-bottom: 60px;
+
+        .catering_area {
+            .catering_right_area {
+                .cake_catering {
+                    width: 270px;
+                    height: 270px;
+                    top: 115px;
+                    left: 79px;
+                }
+
+                .catering_bg {
+                    width: 330px;
+                    top: 46px;
+                    right: -20px;
+                }
+
+                .right_red_balls_1 {
+                    display: none;
+                }
+
+                .right_red_balls_2 {
+                    display: none;
+                }
+
+                .right_red_balls_3 {
+                    display: none;
+                }
+
+                .right_red_balls_4 {
+                    display: none;
+                }
+
+                .right_red_balls_5 {
+                    display: none;
+                }
+
+                .right_red_balls_6 {
+                    display: none;
+                }
+            }
+
+            .catering_left_area {
+                padding: 70px 0 0 0;
+
+                h5 {
+                    font-size: 36px;
+                    padding-bottom: 15px;
+                }
+
+                p {
+
+                    padding-bottom: 15px;
+                }
+
+                .btn-primary {
+                    width: 160px;
+                    height: 42px;
+                }
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    .catering_section {
+        padding-bottom: 20px;
+
+        .catering_area {
+            .catering_right_area {
+                .cake_catering {
+                    width: 248px;
+                    height: 248px;
+                    top: 113px;
+                    left: 52px;
+                }
+
+                .catering_bg {
+                    display: none;
+                }
+
+                .right_red_balls_1 {
+                    display: none;
+                }
+
+                .right_red_balls_2 {
+                    display: none;
+                }
+
+                .right_red_balls_3 {
+                    display: none;
+                }
+
+                .right_red_balls_4 {
+                    display: none;
+                }
+
+                .right_red_balls_5 {
+                    display: none;
+                }
+
+                .right_red_balls_6 {
+                    display: none;
+                }
+            }
+
+            .catering_left_area {
+                padding: 20px 0;
+
+                h5 {
+                    font-size: 36px;
+                    padding-bottom: 15px;
+                }
+
+                p {
+                    font-size: 14px;
+                    padding-bottom: 15px;
+                }
+
+                .btn-primary {
+                    width: 160px;
+                    height: 42px;
+                }
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 575px) {
+    .catering_section {
+        padding-bottom: 20px;
+
+        .catering_area {
+            .catering_right_area {
+                display: flex;
+                justify-content: center;
+
+
+                .cake_catering {
+                    width: 248px;
+                    height: 248px;
+                    position: unset;
+                }
+
+                .catering_bg {
+                    display: none;
+                }
+
+                .right_red_balls_1 {
+                    display: none;
+                }
+
+                .right_red_balls_2 {
+                    display: none;
+                }
+
+                .right_red_balls_3 {
+                    display: none;
+                }
+
+                .right_red_balls_4 {
+                    display: none;
+                }
+
+                .right_red_balls_5 {
+                    display: none;
+                }
+
+                .right_red_balls_6 {
+                    display: none;
+                }
+            }
+
+            .catering_left_area {
+                padding: 25px 0;
+
+                h5 {
+                    font-size: 30px;
+                    padding-bottom: 10px;
+                }
+
+                p {
+                    font-size: 14px;
+                    padding-bottom: 15px;
+                }
+
+                .btn-primary {
+                    width: 140px;
+                    height: 40px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+    .catering_section {
+        padding-bottom: 20px;
+
+        .catering_area {
+            .catering_right_area {
+                display: flex;
+                justify-content: center;
+                .cake_catering {
+                    width: 248px;
+                    height: 248px;
+                    position: unset;
+                }
+
+                .catering_bg {
+                    display: none;
+                }
+
+                .right_red_balls_1 {
+                    display: none;
+                }
+
+                .right_red_balls_2 {
+                    display: none;
+                }
+
+                .right_red_balls_3 {
+                    display: none;
+                }
+
+                .right_red_balls_4 {
+                    display: none;
+                }
+
+                .right_red_balls_5 {
+                    display: none;
+                }
+
+                .right_red_balls_6 {
+                    display: none;
+                }
+            }
+
+            .catering_left_area {
+                padding: 25px 0;
+
+                h5 {
+                    font-size: 30px;
+                    padding-bottom: 10px;
+                }
+
+                p {
+                    font-size: 14px;
+                    padding-bottom: 15px;
+                }
+
+                .btn-primary {
+                    width: 140px;
+                    height: 40px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {}
+
+
+
+
+/* Add CSS styles for Portrait orientation */
+@media screen and (orientation: portrait) {}
+
+/* Add CSS styles for Landscape orientation */
+@media screen and (orientation: landscape) {}

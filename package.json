@@ -1,0 +1,15 @@
+{
+    "name": "Bakefresh",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "sass": "nodemon --watch sass --ext scss --exec \"sass sass/bakefresh/custom.scss css/custom.css\""
+    },
+    "author": "Irfan Ahmad",
+    "license": "ISC",
+    "devDependencies": {
+        "nodemon": "^3.1.10",
+        "sass": "^1.87.0"
+    }
+}

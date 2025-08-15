@@ -1,0 +1,555 @@
+@use "../base/variable.scss" as variable;
+@use "../base/mixins.scss" as mixins;
+
+.happy_customer_section {
+    padding-top: 90px;
+    background-color: variable.$primary_color;
+    border-radius: 70px 70px 0 0;
+    margin-bottom: 150px;
+    position: relative;
+
+    &::after {
+        content: "";
+        background-image: url("../images/f_banner_decorartion.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 100%;
+        height: 130px;
+        bottom: -120px;
+    }
+
+    .parent_area {
+        .left {
+            .circle {
+                position: relative;
+                width: 370px;
+                height: 370px;
+                margin: auto;
+
+                &::after {
+                    content: '';
+                    width: 250px;
+                    height: 250px;
+                    position: absolute;
+                    top: 60px;
+                    left: 56px;
+                    background-image: url('../images/happy_c1.png');
+                    background-size: cover;
+                    background-position: center;
+                    animation: spinDonut 10s linear infinite;
+                }
+
+                .users-wrapper {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    transform: rotate(0deg);
+                    transition: transform 0.5s ease;
+                    border: 1px dashed variable.$white;
+                    border-radius: 100%;
+
+                    .donut_user {
+                        position: absolute;
+                        width: 60px;
+                        height: 60px;
+                        top: 50%;
+                        left: 50%;
+                        margin: -30px;
+                        transform-origin: center center;
+                        transition: all 0.5s ease;
+                        border-radius: 100%;
+                        overflow: hidden;
+
+                        &.active {
+                            width: 80px;
+                            height: 80px;
+                            z-index: 10;
+                            margin-top: -40px;
+                            margin-left: -40px;
+                        }
+                    }
+                }
+            }
+
+            .user_count {
+                text-align: center;
+                font-size: 25px;
+                font-weight: 600;
+                font-family: 'magzo', sans-serif;
+                color: variable.$white;
+                padding-top: 71px;
+                padding-bottom: 10px;
+            }
+        }
+
+        .right {
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                background-image: url(../images/quatetion_mark.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 81px;
+                height: 59px;
+                right: 0;
+                bottom: -143px;
+
+            }
+
+            .testimonial-carousel {
+                .item {
+                    padding: 30px 15px;
+
+                    h3 {
+                        font-size: 37px;
+                        font-weight: 600;
+                        font-family: 'magzo', sans-serif;
+                        color: variable.$white;
+                        padding-bottom: 10px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        font-weight: 400;
+                        font-family: 'lato', sans-serif;
+                        color: variable.$white;
+                    }
+                }
+
+
+                .owl-nav {
+                    position: relative;
+                    height: 0;
+
+                    .btn_left1 {
+                        width: 45px;
+                        height: 45px;
+                        border-radius: 100%;
+                        display: grid;
+                        place-items: center;
+                        transition: all 0.4s ease;
+                        color: variable.$white;
+                        font-size: 18px;
+                        position: absolute;
+                        top: 0;
+                        left: 18px;
+                        transition: all 0.4s ease;
+                        border: 1px solid variable.$white;
+
+                        &.btn_right1 {
+                            left: 74px;
+                        }
+
+                        &:hover {
+                            color: variable.$primary_color;
+                            background-color: variable.$white;
+                            border: none;
+                        }
+                    }
+                }
+
+                .owl-dots {
+                    height: 0;
+                }
+            }
+
+        }
+    }
+
+    @keyframes spinDonut {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+/* Above 1920 desktop */
+@media (min-width: 1920px) {}
+
+/* 1680 desktop */
+@media (min-width: 1680px) and (max-width: 1919px) {}
+
+/* 1600 desktop */
+@media (min-width: 1600px) and (max-width: 1679px) {}
+
+/* Above 1400 and Below 1599 Desktop*/
+@media (min-width: 1400px) and (max-width: 1599px) {}
+
+/* 1300 desktop only */
+@media (min-width: 1300px) and (max-width: 1399px) {}
+
+/* 1200 desktop only */
+@media (min-width: 1200px) and (max-width: 1299px) {}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .happy_customer_section {
+        padding-top: 70px;
+        margin-bottom: 120px;
+
+        &::after {
+            height: 69px;
+            bottom: -68px;
+        }
+
+        .parent_area {
+            .left {
+                .circle {
+                    width: 317px;
+                    height: 317px;
+
+                    &::after {
+                        width: 200px;
+                        height: 200px;
+                        top: 60px;
+                        left: 56px;
+                    }
+
+                    .users-wrapper {
+                        .donut_user {
+                            width: 55px;
+                            height: 55px;
+
+                            &.active {
+                                width: 70px;
+                                height: 70px;
+                                margin-top: -40px;
+                                margin-left: -40px;
+                            }
+                        }
+                    }
+                }
+
+                .user_count {
+                    font-size: 20px;
+                    padding-top: 50px;
+                    padding-bottom: 10px;
+                }
+            }
+
+            .right {
+                &::after {
+                    width: 61px;
+                    height: 42px;
+                    right: 13px;
+                    bottom: -94px;
+                }
+
+                .testimonial-carousel {
+                    .item {
+                        padding: 15px;
+
+                        h3 {
+                            font-size: 32px;
+                            padding-bottom: 7px;
+                        }
+                    }
+
+                    .owl-nav {
+                        .btn_left1 {
+                            width: 40px;
+                            height: 40px;
+                            font-size: 18px;
+                            left: 18px;
+
+
+                            &.btn_right1 {
+                                left: 74px;
+                            }
+                        }
+                    }
+
+                }
+
+            }
+        }
+
+    }
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+    .happy_customer_section {
+        padding-top: 50px;
+        margin-bottom: 80px;
+
+        &::after {
+            height: 69px;
+            bottom: -68px;
+        }
+
+        .parent_area {
+            .left {
+                .circle {
+                    width: 230px;
+                    height: 230px;
+
+                    &::after {
+                        width: 144px;
+                        height: 144px;
+                        top: 46px;
+                        left: 42px;
+                    }
+
+                    .users-wrapper {
+                        .donut_user {
+                            width: 45px;
+                            height: 45px;
+                            margin: -20px;
+
+                            &.active {
+                                width: 58px;
+                                height: 58px;
+                                margin-top: -30px;
+                                margin-left: -30px;
+                            }
+
+                        }
+                    }
+                }
+
+                .user_count {
+                    font-size: 18px;
+                    padding-top: 41px;
+                    padding-bottom: 10px;
+                }
+            }
+
+            .right {
+                &::after {
+                    width: 50px;
+                    height: 35px;
+                    right: 24px;
+                    bottom: -62px;
+                }
+
+                .testimonial-carousel {
+                    .item {
+                        padding: 10px 10px 20px 10px;
+
+                        h3 {
+                            font-size: 32px;
+                            padding-bottom: 7px;
+                        }
+
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .owl-nav {
+                        .btn_left1 {
+                            width: 35px;
+                            height: 35px;
+                            font-size: 16px;
+                            left: 11px;
+
+
+                            &.btn_right1 {
+                                left: 55px;
+                            }
+                        }
+                    }
+
+                }
+
+            }
+        }
+
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    .happy_customer_section {
+        padding-top: 0;
+        margin-bottom: 70px;
+        border-radius: 25px 25px 0 0;
+
+        &::after {
+            height: 69px;
+            bottom: -68px;
+        }
+
+        .parent_area {
+            .left {
+                display: none;
+            }
+
+            .right {
+                &::after {
+                    display: none;
+                }
+
+                .testimonial-carousel {
+                    .item {
+                        padding: 20px 10px 60px 10px;
+
+                        h3 {
+                            font-size: 24px;
+                            padding-bottom: 7px;
+                        }
+
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .owl-nav {
+                        .btn_left1 {
+                            width: 35px;
+                            height: 35px;
+                            font-size: 16px;
+                            top: -38px;
+                            left: 44%;
+
+                            &.btn_right1 {
+                                left: auto;
+                                right: 44%;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 575px) {
+    .happy_customer_section {
+        padding-top: 0;
+        margin-bottom: 80px;
+        border-radius: 20px 20px 0 0;
+
+        &::after {
+            height: 60px;
+            bottom: -56px;
+        }
+
+        .parent_area {
+            .left {
+                display: none;
+            }
+
+            .right {
+                &::after {
+                    display: none;
+                }
+
+                .testimonial-carousel {
+                    .item {
+                        padding: 20px 0 60px 0;
+
+                        h3 {
+                            font-size: 22px;
+                            padding-bottom: 7px;
+                        }
+
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .owl-nav {
+                        .btn_left1 {
+                            width: 35px;
+                            height: 35px;
+                            font-size: 16px;
+                            top: -34px;
+                            left: 38.5%;
+
+                            &.btn_right1 {
+                                left: auto;
+                                right: 38.5%;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+    .happy_customer_section {
+        padding-top: 0;
+        margin-bottom: 80px;
+        border-radius: 20px 20px 0 0;
+
+        &::after {
+            height: 60px;
+            bottom: -56px;
+        }
+
+        .parent_area {
+            .left {
+                display: none;
+            }
+
+            .right {
+                &::after {
+                    display: none;
+                }
+
+                .testimonial-carousel {
+                    .item {
+                        padding: 20px 0 60px 0;
+
+                        h3 {
+                            font-size: 22px;
+                            padding-bottom: 7px;
+                        }
+
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .owl-nav {
+                        .btn_left1 {
+                            width: 35px;
+                            height: 35px;
+                            font-size: 16px;
+                            top: -34px;
+                            left: 38.5%;
+
+                            &.btn_right1 {
+                                left: auto;
+                                right: 38.5%;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {}
+
+
+
+
+/* Add CSS styles for Portrait orientation */
+@media screen and (orientation: portrait) {}
+
+/* Add CSS styles for Landscape orientation */
+@media screen and (orientation: landscape) {}

@@ -1,0 +1,497 @@
+@use "../base/variable.scss" as variable;
+@use "../base/mixins.scss" as mixins;
+
+.fatherday_banner {
+    background-image: url("../images/fatherday_banner.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    margin-bottom: 150px;
+
+
+    &::after {
+        content: "";
+        background-image: url("../images/f_banner_decorartion.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 100%;
+        height: 160px;
+        z-index: -1;
+        bottom: -120px;
+    }
+
+    .parent_area {
+        .father_day_left_area {
+            padding-bottom: 22px;
+            padding-top: 50px;
+
+            h5 {
+                font-size: 57px;
+                font-weight: 600;
+                font-family: "magzo", serif;
+                color: variable.$White_color;
+                text-align: center;
+                padding-bottom: 30px;
+            }
+
+            p {
+                font-size: 16px;
+                font-family: "Lato", sans-serif;
+                font-weight: 400;
+                color: variable.$White_color;
+                text-align: center;
+                padding-bottom: 25px;
+            }
+
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                column-gap: 60px;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                padding-bottom: 25px;
+
+                li {
+                    font-size: 40px;
+                    font-weight: 600;
+                    font-family: "magzo", serif;
+                    color: variable.$White_color;
+                    text-align: center;
+
+                    .date_num {
+                        font-size: 57px;
+                        line-height: 60.2px;
+                        font-weight: 600;
+                        font-family: "magzo", serif;
+                        color: variable.$White_color;
+                        text-align: center;
+                    }
+
+                    .date_text {
+                        font-size: 16px;
+                        line-height: 20.2px;
+                        font-family: "Lato", sans-serif;
+                        font-weight: 400;
+                        color: variable.$White_color;
+                        text-align: center;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+
+            .roller_content {
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+
+                .right {
+                    width: 50px;
+                    height: 50px;
+                    margin: auto 0;
+                }
+
+                .content_heading {
+                    background-color: variable.$White_color;
+                    font-weight: 600;
+                    font-size: 20px;
+                    font-family: "Lato", sans-serif;
+                    color: variable.$primary_color;
+                    padding: 12px;
+                }
+
+                .left {
+                    width: 50px;
+                    height: 50px;
+                    margin: auto 0;
+                }
+            }
+        }
+    }
+}
+
+/* Above 1920 desktop */
+@media (min-width: 1920px) {}
+
+/* 1680 desktop */
+@media (min-width: 1680px) and (max-width: 1919px) {}
+
+/* 1600 desktop */
+@media (min-width: 1600px) and (max-width: 1679px) {}
+
+/* Above 1400 and Below 1599 Desktop*/
+@media (min-width: 1400px) and (max-width: 1599px) {}
+
+/* 1300 desktop only */
+@media (min-width: 1300px) and (max-width: 1399px) {}
+
+/* 1200 desktop only */
+@media (min-width: 1200px) and (max-width: 1299px) {}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .fatherday_banner {
+        margin-bottom: 120px;
+
+        &::after {
+            height: 110px;
+            bottom: -81px;
+        }
+
+        .parent_area {
+            .father_day_left_area {
+                padding-bottom: 10px;
+                padding-top: 27px;
+
+                h5 {
+                    font-size: 47px;
+                    padding-bottom: 8px;
+                }
+
+                p {
+                    font-size: 16px;
+                    padding-bottom: 15px;
+                }
+
+                ul {
+                    padding-bottom: 15px;
+
+                    li {
+                        font-size: 32px;
+
+                        .date_num {
+                            font-size: 44px;
+                        }
+
+                        .date_text {
+                            font-size: 15px;
+                        }
+                    }
+                }
+
+                .roller_content {
+                    margin-top: 15px;
+
+                    .content_heading {
+                        font-size: 16px;
+                        padding: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .right {
+                        width: 34px;
+                        height: 33px;
+                    }
+
+                    .left {
+                        width: 34px;
+                        height: 33px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+    .fatherday_banner {
+        background-image: unset;
+        background-color: variable.$primary_color;
+        border-radius: 18px 18px 0 0;
+        margin-bottom: 100px;
+
+        &::after {
+            height: 110px;
+            bottom: -81px;
+        }
+
+        .parent_area {
+            .father_day_left_area {
+                padding-bottom: 10px;
+                padding-top: 27px;
+
+                h5 {
+                    font-size: 40px;
+                    padding-bottom: 8px;
+                }
+
+                p {
+                    font-size: 16px;
+                    padding-bottom: 15px;
+                }
+
+                ul {
+                    padding-bottom: 15px;
+
+                    li {
+                        font-size: 32px;
+
+                        .date_num {
+                            font-size: 44px;
+                        }
+
+                        .date_text {
+                            font-size: 15px;
+                        }
+                    }
+                }
+
+                .roller_content {
+                    margin-top: 15px;
+
+                    .content_heading {
+                        font-size: 16px;
+                        padding: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .right {
+                        width: 34px;
+                        height: 33px;
+                    }
+
+                    .left {
+                        width: 34px;
+                        height: 33px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    .fatherday_banner {
+        background-image: unset;
+        background-color: variable.$primary_color;
+        border-radius: 18px 18px 0 0;
+
+        &::after {
+            height: 110px;
+            bottom: -81px;
+        }
+
+        .parent_area {
+            .father_day_left_area {
+                padding-bottom: 10px;
+                padding-top: 15px;
+
+                h5 {
+                    font-size: 32px;
+                    padding-bottom: 8px;
+                }
+
+                p {
+                    font-size: 14px;
+                    padding-bottom: 8px;
+                }
+
+                ul {
+                    padding-bottom: 12px;
+
+                    li {
+                        font-size: 32px;
+
+                        .date_num {
+                            font-size: 34px;
+                            line-height: 37.2px;
+                        }
+
+                        .date_text {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                .roller_content {
+                    margin-top: 15px;
+
+                    .content_heading {
+                        font-size: 14px;
+                        padding: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .right {
+                        width: 34px;
+                        height: 33px;
+                    }
+
+                    .left {
+                        width: 34px;
+                        height: 33px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 575px) {
+    .fatherday_banner {
+        background-image: unset;
+        background-color: variable.$primary_color;
+        border-radius: 18px 18px 0 0;
+        margin-bottom: 65px;
+
+        &::after {
+            height: 56px;
+            bottom: -45px;
+
+        }
+
+        .parent_area {
+            .father_day_left_area {
+                padding-bottom: 10px;
+                padding-top: 15px;
+
+                h5 {
+                    font-size: 27px;
+                    padding-bottom: 8px;
+                }
+
+                p {
+                    font-size: 14px;
+                    padding-bottom: 8px;
+                }
+
+                ul {
+                    padding-bottom: 12px;
+                    column-gap: 29px;
+
+                    li {
+                        font-size: 28px;
+
+                        .date_num {
+                            font-size: 28px;
+                            line-height: 32.2px;
+                        }
+
+                        .date_text {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                .roller_content {
+                    margin-top: 0;
+
+                    .content_heading {
+                        font-size: 14px;
+                        padding: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .right {
+                        width: 34px;
+                        height: 33px;
+                    }
+
+                    .left {
+                        width: 34px;
+                        height: 33px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+    .fatherday_banner {
+        background-image: unset;
+        background-color: variable.$primary_color;
+        border-radius: 18px 18px 0 0;
+        margin-bottom: 65px;
+
+        &::after {
+            height: 56px;
+            bottom: -45px;
+
+        }
+
+        .parent_area {
+            .father_day_left_area {
+                padding-bottom: 10px;
+                padding-top: 15px;
+
+                h5 {
+                    font-size: 26px;
+                    padding-bottom: 8px;
+                }
+
+                p {
+                    font-size: 14px;
+                    padding-bottom: 8px;
+                }
+
+                ul {
+                    padding-bottom: 12px;
+                    column-gap: 29px;
+
+                    li {
+                        font-size: 28px;
+
+                        .date_num {
+                            font-size: 28px;
+                            line-height: 32.2px;
+                        }
+
+                        .date_text {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                .roller_content {
+                    margin-top: 0;
+
+                    .content_heading {
+                        font-size: 14px;
+                        padding: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .right {
+                        width: 34px;
+                        height: 33px;
+                    }
+
+                    .left {
+                        width: 34px;
+                        height: 33px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {}
+
+
+
+
+/* Add CSS styles for Portrait orientation */
+@media screen and (orientation: portrait) {}
+
+/* Add CSS styles for Landscape orientation */
+@media screen and (orientation: landscape) {}

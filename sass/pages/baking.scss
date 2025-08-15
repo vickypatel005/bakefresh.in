@@ -1,0 +1,909 @@
+@use "../base/variable.scss" as variable;
+@use "../base/mixins.scss" as mixins;
+
+.baking_section {
+    padding-bottom: 90px;
+
+    .parent_area {
+        .tabs_parent {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 35px;
+
+
+            .left {
+                ul {
+                    display: flex;
+                    column-gap: 15px;
+                    flex-wrap: wrap;
+                    row-gap: 10px;
+
+                    li {
+                        .tab {
+                            width: 200px;
+                            height: 58px;
+                            border-radius: 58px;
+                            border: 1px solid variable.$primary_color;
+                            background-color: variable.$White_color;
+                            font-weight: 400;
+                            color: variable.$primary_color;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 18px;
+                            font-family: "lato", sans-serif;
+                            transition: all 0.5s;
+
+                            &:hover {
+                                background-color: variable.$primary_color;
+                                border: 1px solid variable.$primary_color;
+                                color: variable.$White_color;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right {
+                .btn-primary {
+                    width: 200px;
+                    height: 58px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+
+        .owl-carousel {
+            .owl-stage-outer {
+                .owl-stage {
+                    .owl-item {
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 10px;
+
+
+                        .card {
+                            position: relative;
+                            border: 1px solid variable.$light_pink;
+                            border-radius: 20px 20px;
+                            overflow: hidden;
+                            width: 100%;
+                            box-shadow: 0px 5px 10px 0px #FF91AC1C;
+
+                            .baking_image {
+                                width: 100%;
+                                height: 228px;
+
+                                overflow: hidden;
+
+                                img {
+                                    transition: transform 0.8s ease;
+
+                                    &:hover {
+                                        transform: scale(1.04);
+                                    }
+                                }
+
+                                .free_tab {
+                                    width: 50px;
+                                    height: 21px;
+                                    border-radius: 20px;
+                                    background-color: variable.$White_color;
+                                    box-shadow: 0px 1px 0px 0px #f25d82, 0px 3px 0px 0px #ed567b,
+                                        0px 6px 9px 0px #f67d9b;
+                                    color: variable.$pink_4;
+                                    position: absolute;
+                                    font-size: 12px;
+                                    top: 0;
+                                    right: 0;
+                                    margin-top: 7px;
+                                    margin-right: 8px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    transition: all 0.5s ease;
+
+                                    &:hover {
+                                        background-color: variable.$secondary_color;
+                                        color: variable.$White_color;
+                                    }
+                                }
+                            }
+
+                            .baking_content {
+                                display: flex;
+                                position: relative;
+                                background-color: variable.$White_color;
+
+                                &::after {
+                                    content: "";
+                                    width: 100%;
+                                    height: 13px;
+                                    background-color: variable.$White_color;
+                                    position: absolute;
+                                    top: -8px;
+                                    background-position: top;
+                                    border-radius: 28px 28px 0 0;
+                                }
+
+                                .content_name {
+                                    width: 80%;
+                                    padding: 8px 15px;
+                                    height: 110px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    flex-grow: 1;
+
+                                    .cake_name {
+                                        font-size: 27px;
+                                        color: variable.$black_color;
+                                        font-family: "magzo", serif;
+                                        transition: all 0.4s;
+                                        display: -webkit-box;
+                                        -webkit-line-clamp: 2;
+                                        -webkit-box-orient: vertical;
+                                        overflow: hidden;
+
+                                        &:hover {
+                                            color: variable.$primary_color;
+                                        }
+                                    }
+
+
+                                    .readmore_btn {
+                                        font-size: 16px;
+                                        text-decoration: underline;
+                                        color: variable.$primary_color;
+                                        transition: all 0.4s ease;
+
+                                        &:hover {
+                                            color: variable.$secondary_color;
+                                        }
+                                    }
+                                }
+
+                                .right_arrow {
+                                    width: 20%;
+                                    flex-shrink: 0;
+
+                                    .arrow_icon {
+                                        min-width: 76px;
+                                        height: 76px;
+                                        background-color: variable.$pink_4;
+                                        border-radius: 100%;
+                                        position: absolute;
+                                        bottom: -20px;
+
+                                        i {
+                                            position: absolute;
+                                            left: 29%;
+                                            top: 26%;
+                                            transform: translate(-100%, -50%);
+                                            transition: all 0.5s ease;
+                                            font-size: 24px;
+                                            color: variable.$White_color;
+                                            transform: rotate(-45deg);
+                                        }
+                                    }
+
+                                    &:hover {
+                                        i {
+                                            transform: rotate(0deg);
+                                        }
+
+                                        .arrow_icon {
+                                            background-color: variable.$secondary_color;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .owl-nav {
+                            margin-top: 40px;
+
+                            .baking_btn_left {
+                                width: 50px;
+                                height: 50px;
+                                background-color: variable.$primary_color;
+                                border-radius: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                transition: all 0.4s ease;
+                                color: variable.$White_color;
+                                font-size: 21px;
+                                position: absolute;
+                                top: 38%;
+                                left: -48px;
+                            }
+
+                            .baking_btn_right {
+                                width: 50px;
+                                height: 50px;
+                                background-color: variable.$primary_color;
+                                border-radius: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                transition: all 0.4s ease;
+                                color: variable.$White_color;
+                                font-size: 21px;
+                                position: absolute;
+                                top: 38%;
+                                right: -48px;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .owl-nav {
+                height: 0;
+
+                .btn_left {
+                    width: 45px;
+                    height: 45px;
+                    background-color: variable.$primary_color;
+                    border-radius: 100%;
+                    display: grid;
+                    place-items: center;
+                    transition: all 0.4s ease;
+                    color: variable.$White_color;
+                    font-size: 18px;
+                    position: absolute;
+                    top: 41%;
+                    left: -48px;
+                    transition: all 0.3s ease-in-out;
+
+                    &.btn_right {
+                        right: -48px;
+                        left: unset;
+                    }
+
+                    &:hover {
+                        background-color: variable.$secondary_color;
+                    }
+                }
+            }
+
+            .owl-dots {
+                height: 0;
+            }
+        }
+
+        .center_btn {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            padding-top: 20px;
+
+            .btn-primary {
+                width: 140px;
+                height: 40px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+
+
+
+
+/* Above 1920 desktop */
+@media (min-width: 1920px) {}
+
+/* 1680 desktop */
+@media (min-width: 1680px) and (max-width: 1919px) {}
+
+/* 1600 desktop */
+@media (min-width: 1600px) and (max-width: 1679px) {}
+
+/* Above 1400 and Below 1599 Desktop*/
+@media (min-width: 1400px) and (max-width: 1599px) {}
+
+/* 1300 desktop only */
+@media (min-width: 1300px) and (max-width: 1399px) {
+    .baking_section {
+        padding-bottom: 70px;
+
+        .parent_area {
+            .tabs_parent {
+                .left {
+                    ul {
+                        li {
+
+                            .tab {
+                                width: 180px;
+                                height: 55px;
+
+                            }
+                        }
+                    }
+                }
+
+                .right {
+                    .btn-primary {
+                        width: 180px;
+                        height: 55px;
+
+                    }
+                }
+            }
+
+            .owl-carousel {
+                .owl-stage-outer {
+                    .owl-stage {
+                        .owl-item {
+                            .card {
+                                .baking_image {
+                                    width: 100%;
+                                    height: 205px;
+                                }
+
+                                .baking_content {
+                                    .content_name {
+                                        height: 100px;
+
+                                        .cake_name {
+                                            font-size: 24px;
+                                        }
+                                    }
+
+                                    .right_arrow {
+                                        width: 20%;
+                                        flex-shrink: 0;
+
+                                        .arrow_icon {
+                                            bottom: -16px;
+                                            right: -16px
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 1200 desktop only */
+@media (min-width: 1200px) and (max-width: 1299px) {
+    .baking_section {
+        padding-bottom: 70px;
+
+        .parent_area {
+            .tabs_parent {
+                .left {
+                    ul {
+                        li {
+                            .tab {
+                                width: 180px;
+                                height: 55px;
+
+                            }
+                        }
+                    }
+                }
+
+                .right {
+                    .btn-primary {
+                        width: 180px;
+                        height: 55px;
+
+                    }
+                }
+            }
+
+            .owl-carousel {
+                .owl-stage-outer {
+                    .owl-stage {
+                        .owl-item {
+                            .card {
+                                .baking_image {
+                                    height: 205px;
+                                }
+
+                                .baking_content {
+                                    .content_name {
+                                        height: 90px;
+
+                                        .cake_name {
+                                            font-size: 22px;
+                                        }
+                                    }
+
+                                    .right_arrow {
+                                        .arrow_icon {
+                                            bottom: -16px;
+                                            right: -16px
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .owl-nav .btn_left.btn_right {
+                    right: -9px;
+                    left: unset;
+                }
+            }
+        }
+    }
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .baking_section {
+        padding-bottom: 70px;
+
+        .parent_area {
+            .tabs_parent {
+                .left {
+                    ul {
+                        li {
+                            .tab {
+                                width: 160px;
+                                height: 50px;
+                            }
+                        }
+                    }
+                }
+
+                .right {
+                    .btn-primary {
+                        width: 160px;
+                        height: 50px;
+
+                    }
+                }
+            }
+
+            .owl-carousel {
+                .owl-stage-outer {
+                    .owl-stage {
+                        .owl-item {
+                            .card {
+                                .baking_image {
+                                    height: 185px;
+                                }
+
+                                .baking_content {
+                                    .content_name {
+                                        height: 100px;
+
+                                        .cake_name {
+                                            font-size: 24px;
+                                        }
+                                    }
+
+                                    .right_arrow {
+                                        .arrow_icon {
+                                            min-width: 69px;
+                                            height: 69px;
+                                            bottom: -16px;
+                                            right: -16px
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+                .owl-nav {
+                    .btn_left {
+                        width: 40px;
+                        height: 40px;
+                        font-size: 16px;
+                        top: 45%;
+                        left: -7px;
+
+                        &.btn_right {
+                            right: -9px;
+                            left: unset;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+    .baking_section {
+        padding-bottom: 50px;
+
+        .parent_area {
+            .tabs_parent {
+                .left {
+                    ul {
+                        li {
+                            .tab {
+                                width: 140px;
+                                height: 45px;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+
+                .right {
+                    .btn-primary {
+                        width: 140px;
+                        height: 45px;
+                        font-size: 14px;
+
+                    }
+                }
+            }
+
+            .owl-carousel {
+                .owl-stage-outer {
+                    .owl-stage {
+                        .owl-item {
+                            .card {
+                                .baking_image {
+                                    height: 185px;
+                                }
+
+                                .baking_content {
+                                    .content_name {
+                                        height: 100px;
+
+                                        .cake_name {
+                                            font-size: 22px;
+                                        }
+                                    }
+
+                                    .right_arrow {
+                                        .arrow_icon {
+                                            min-width: 69px;
+                                            height: 69px;
+                                            bottom: -16px;
+                                            right: -16px
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .owl-nav {
+                    .btn_left {
+                        width: 40px;
+                        height: 40px;
+                        font-size: 16px;
+                        top: 45%;
+                        left: -9px;
+
+                        &.btn_right {
+                            right: -9px;
+                            left: unset;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    .baking_section {
+        padding-bottom: 50px;
+
+        .parent_area {
+            .tabs_parent {
+                .left {
+                    ul {
+                        li {
+                            .tab {
+                                width: 130px;
+                                height: 42px;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+
+                .right {
+                    .btn-primary {
+                        width: 130px;
+                        height: 39px;
+                        font-size: 14px;
+
+                    }
+                }
+            }
+
+            .owl-carousel {
+                .owl-stage-outer {
+                    .owl-stage {
+                        .owl-item {
+                            .card {
+                                .baking_image {
+                                    height: 150px;
+                                }
+
+                                .baking_content {
+                                    .content_name {
+                                        height: 75px;
+                                        padding: 0 9px 9px 9px;
+
+                                        .cake_name {
+                                            font-size: 18px;
+                                        }
+
+                                        .readmore_btn {
+                                            font-size: 14px;
+                                        }
+                                    }
+
+                                    .right_arrow {
+                                        .arrow_icon {
+                                            min-width: 55px;
+                                            height: 55px;
+                                            bottom: -10px;
+                                            right: -10px;
+
+                                            i {
+                                                font-size: 18px;
+                                            }
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .owl-nav {
+                    .btn_left {
+                        left: -9px;
+                        width: 35px;
+                        height: 35px;
+                        font-size: 14px;
+
+                        &.btn_right {
+                            right: -9px;
+
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 575px) {
+    .baking_section {
+        padding-bottom: 50px;
+
+        .parent_area {
+            .tabs_parent {
+                padding-bottom: 18px;
+
+                .left {
+                    ul {
+                        column-gap: 8px;
+
+                        li {
+                            .tab {
+                                width: 110px;
+                                height: 33px;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+
+                .right {
+                    display: none;
+
+                    .btn-primary {
+                        width: 130px;
+                        height: 39px;
+                        font-size: 14px;
+
+                    }
+                }
+            }
+
+            .owl-carousel {
+                .owl-stage-outer {
+                    .owl-stage {
+                        .owl-item {
+                            padding: 5px;
+
+                            .card {
+                                .baking_image {
+                                    height: 265px;
+                                }
+
+                                .baking_content {
+                                    .content_name {
+                                        height: 93px;
+                                        padding: 10px 20px 12px 20px;
+
+                                        .cake_name {
+                                            font-size: 22px;
+                                        }
+
+                                        .readmore_btn {
+                                            font-size: 16px;
+                                        }
+                                    }
+
+                                    .right_arrow {
+                                        .arrow_icon {
+                                            min-width: 66px;
+                                            height: 66px;
+                                            bottom: -10px;
+                                            right: -6px;
+
+                                            i {
+                                                font-size: 24px;
+                                            }
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .owl-nav {
+                    .btn_left {
+                        left: -9px;
+                        width: 30px;
+                        height: 30px;
+                        font-size: 12px;
+
+                        &.btn_right {
+                            right: -9px;
+
+                        }
+
+                    }
+                }
+            }
+
+            .center_btn {
+                display: flex;
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+    .baking_section {
+        padding-bottom: 50px;
+
+        .parent_area {
+            .tabs_parent {
+                padding-bottom: 18px;
+
+                .left {
+                    ul {
+                        column-gap: 8px;
+
+                        li {
+                            .tab {
+                                width: 105px;
+                                height: 32px;
+                                font-size: 12px;
+
+                            }
+                        }
+                    }
+                }
+
+                .right {
+                    display: none;
+
+                    .btn-primary {
+                        width: 130px;
+                        height: 39px;
+                        font-size: 14px;
+
+                    }
+                }
+            }
+
+            .owl-carousel {
+                .owl-stage-outer {
+                    .owl-stage {
+                        .owl-item {
+                            padding: 5px;
+
+                            .card {
+                                .baking_image {
+                                    height: 265px;
+                                }
+
+                                .baking_content {
+                                    .content_name {
+                                        height: 93px;
+                                        padding: 10px 20px 12px 20px;
+
+                                        .cake_name {
+                                            font-size: 22px;
+                                        }
+
+                                        .readmore_btn {
+                                            font-size: 16px;
+                                        }
+                                    }
+
+                                    .right_arrow {
+                                        .arrow_icon {
+                                            min-width: 66px;
+                                            height: 66px;
+                                            bottom: -10px;
+                                            right: -6px;
+
+                                            i {
+                                                font-size: 24px;
+                                            }
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .owl-nav {
+                    .btn_left {
+                        left: -9px;
+                        width: 30px;
+                        height: 30px;
+                        font-size: 12px;
+
+                        &.btn_right {
+                            right: -9px;
+
+                        }
+
+                    }
+                }
+            }
+
+            .center_btn {
+                display: flex;
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {}
+
+
+
+
+/* Add CSS styles for Portrait orientation */
+@media screen and (orientation: portrait) {}
+
+/* Add CSS styles for Landscape orientation */
+@media screen and (orientation: landscape) {}

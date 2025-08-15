@@ -1,0 +1,476 @@
+@use "../base/variable.scss" as variable;
+@use "../base/mixins.scss" as mixins;
+
+.gift_humper_section {
+    .gift_humper_area {
+        .gift_left_area {
+            position: relative;
+
+            .gift_bg {
+                width: 650px;
+                margin-left: -340px;
+                // margin-left: -150px;
+            }
+
+            .gift__one {
+                width: 420px;
+                height: 420px;
+                border-radius: 100%;
+                overflow: hidden;
+                position: absolute;
+                transition: transform 0.5s ease;
+                top: 150px;
+                left: 60px;
+                z-index: 2;
+
+                &:hover {
+                    transform: scale(1.03);
+                }
+            }
+
+            .gift_hamper_1 {
+                width: 133px;
+                height: 118px;
+                position: absolute;
+                top: 50px;
+                left: -20px;
+            }
+
+            .gift_hamper_2 {
+                width: 125px;
+                height: 108px;
+                position: absolute;
+                bottom: 74px;
+                left: -17px;
+            }
+
+            .scissor {
+                width: 125px;
+                height: 108px;
+                position: absolute;
+                left: -150px;
+                top: 270px;
+            }
+        }
+
+        .gift_right_area {
+            h5 {
+                font-size: 57px;
+                color: variable.$black_color;
+                font-family: "magzo", serif;
+                padding-bottom: 25px;
+
+                span {
+                    color: variable.$primary_color;
+                }
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 23px;
+                font-family: "lato", sans-serif;
+                color: variable.$gray_shade4;
+                padding-bottom: 30px;
+            }
+
+            .btn-primary {
+                width: 200px;
+                height: 49px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+
+/* Above 1920 desktop */
+@media (min-width: 1920px) {}
+
+/* 1680 desktop */
+@media (min-width: 1680px) and (max-width: 1919px) {}
+
+/* 1600 desktop */
+@media (min-width: 1600px) and (max-width: 1679px) {}
+
+/* Above 1400 and Below 1599 Desktop*/
+@media (min-width: 1400px) and (max-width: 1599px) {}
+
+/* 1300 desktop only */
+@media (min-width: 1300px) and (max-width: 1399px) {
+    .gift_humper_section {
+        .gift_humper_area {
+            .gift_left_area {
+                .gift_bg {
+                    width: 561px;
+                    margin-left: -117px;
+
+                }
+
+                .gift__one {
+                    width: 400px;
+                    height: 400px;
+                    top: 107px;
+                    left: 26px;
+                }
+
+                .gift_hamper_1 {
+                    width: 116px;
+                    height: 101px;
+                    top: 55px;
+                }
+
+                .gift_hamper_2 {
+                    width: 112px;
+                    height: 95px;
+                    bottom: 78px;
+                }
+
+                .scissor {
+                    width: 110px;
+                    height: 98px;
+                    left: -98px;
+                    top: 256px;
+                }
+            }
+        }
+    }
+}
+
+/* 1200 desktop only */
+@media (min-width: 1200px) and (max-width: 1299px) {
+    .gift_humper_section {
+        .gift_humper_area {
+            .gift_left_area {
+                .gift_bg {
+                    width: 561px;
+                    margin-left: -117px;
+
+                }
+
+                .gift__one {
+                    width: 400px;
+                    height: 400px;
+                    top: 107px;
+                    left: 26px;
+                }
+
+                .gift_hamper_1 {
+                    width: 116px;
+                    height: 101px;
+                    top: 55px;
+                }
+
+                .gift_hamper_2 {
+                    width: 112px;
+                    height: 95px;
+                    bottom: 78px;
+                }
+
+                .scissor {
+                    width: 110px;
+                    height: 98px;
+                    left: -98px;
+                    top: 256px;
+                }
+            }
+        }
+    }
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .gift_humper_section {
+        .gift_humper_area {
+            .gift_left_area {
+                .gift_bg {
+                    width: 490px;
+                    margin-left: -64px;
+
+                }
+
+                .gift__one {
+                    width: 303px;
+                    height: 303px;
+                    top: 110px;
+                    left: 99px;
+                }
+
+                .gift_hamper_1 {
+                    width: 98px;
+                    height: 86px;
+                    top: 57px;
+                    left: 48px;
+                }
+
+                .gift_hamper_2 {
+                    width: 88px;
+                    height: 78px;
+                    bottom: 76px;
+                    left: 50px;
+                }
+
+                .scissor {
+                    width: 95px;
+                    height: 90px;
+                    left: -6px;
+                    top: 227px;
+                }
+            }
+
+            .gift_right_area {
+                h5 {
+                    font-size: 46px;
+                    padding-bottom: 20px;
+                }
+
+                p {
+                    padding-bottom: 20px;
+                }
+
+                .btn-primary {
+                    width: 180px;
+                    height: 46px;
+                }
+            }
+        }
+    }
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+    .gift_humper_section {
+        .gift_humper_area {
+            padding-bottom: 40px;
+
+            .gift_left_area {
+                .gift_bg {
+                    width: 390px;
+                    margin-left: -64px;
+
+                }
+
+                .gift__one {
+                    width: 280px;
+                    height: 280px;
+                    left: 11px;
+                    top: 77px;
+
+                }
+
+                .gift_hamper_1 {
+                    display: none;
+                }
+
+                .gift_hamper_2 {
+                    display: none;
+                }
+
+                .scissor {
+                    display: none;
+                }
+            }
+
+            .gift_right_area {
+                h5 {
+                    font-size: 36px;
+                    padding-bottom: 15px;
+                }
+
+                p {
+
+                    padding-bottom: 15px;
+                }
+
+                .btn-primary {
+                    width: 160px;
+                    height: 42px;
+                }
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    .gift_humper_section {
+        .gift_humper_area {
+            padding-bottom: 30px;
+            .gift_left_area {
+                .gift_bg {
+                    display: none;
+
+                }
+
+                .gift__one {
+                    width: 280px;
+                    height: 280px;
+                    left: 11px;
+                    top: 77px;
+
+                }
+
+                .gift_hamper_1 {
+                    display: none;
+                }
+
+                .gift_hamper_2 {
+                    display: none;
+                }
+
+                .scissor {
+                    display: none;
+                }
+            }
+
+            .gift_right_area {
+
+                h5 {
+                    font-size: 36px;
+                    padding-bottom: 15px;
+                }
+
+                p {
+
+                    padding-bottom: 15px;
+                    font-size: 14px;
+                }
+
+                .btn-primary {
+                    width: 160px;
+                    height: 42px;
+                }
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 575px) {
+    .gift_humper_section {
+        .gift_humper_area {
+            .gift_left_area {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-bottom: 20px;
+
+                .gift_bg {
+                    display: none;
+
+                }
+
+                .gift__one {
+                    width: 280px;
+                    height: 280px;
+                    position: unset;
+
+                }
+
+                .gift_hamper_1 {
+                    display: none;
+                }
+
+                .gift_hamper_2 {
+                    display: none;
+                }
+
+                .scissor {
+                    display: none;
+                }
+            }
+
+            .gift_right_area {
+                padding-bottom: 30px;
+
+                h5 {
+                    font-size: 30px;
+                    padding-bottom: 10px;
+                }
+
+                p {
+                    font-size: 14px;
+                    padding-bottom: 15px;
+                }
+
+                .btn-primary {
+                    width: 140px;
+                    height: 40px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+    .gift_humper_section {
+        .gift_humper_area {
+            .gift_left_area {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-bottom: 20px;
+
+                .gift_bg {
+                    display: none;
+
+                }
+
+                .gift__one {
+                    width: 280px;
+                    height: 280px;
+                    position: unset;
+
+                }
+
+                .gift_hamper_1 {
+                    display: none;
+                }
+
+                .gift_hamper_2 {
+                    display: none;
+                }
+
+                .scissor {
+                    display: none;
+                }
+            }
+
+            .gift_right_area {
+                padding-bottom: 30px;
+
+                h5 {
+                    font-size: 30px;
+                    padding-bottom: 10px;
+                }
+
+                p {
+                    font-size: 14px;
+                    padding-bottom: 15px;
+                }
+
+                .btn-primary {
+                    width: 140px;
+                    height: 40px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {}
+
+
+
+
+/* Add CSS styles for Portrait orientation */
+@media screen and (orientation: portrait) {}
+
+/* Add CSS styles for Landscape orientation */
+@media screen and (orientation: landscape) {}

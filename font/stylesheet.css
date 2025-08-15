@@ -1,0 +1,208 @@
+@font-face {
+    font-family: 'Magzo';
+    src: url('Magzo-Bold.eot');
+    src: local('Magzo Italic Bold'), local('Magzo-Bold'),
+        url('Magzo-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Magzo-Bold.woff2') format('woff2'),
+        url('Magzo-Bold.woff') format('woff'),
+        url('Magzo-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Magzo';
+    src: url('Magzo-Bold_1.eot');
+    src: local('Magzo Bold'), local('Magzo-Bold'),
+        url('Magzo-Bold_1.eot?#iefix') format('embedded-opentype'),
+        url('Magzo-Bold_1.woff2') format('woff2'),
+        url('Magzo-Bold_1.woff') format('woff'),
+        url('Magzo-Bold_1.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Magzo Italic Semi';
+    src: url('MagzoItalic-SemiBold.eot');
+    src: local('Magzo Italic Semi Bold'), local('MagzoItalic-SemiBold'),
+        url('MagzoItalic-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('MagzoItalic-SemiBold.woff2') format('woff2'),
+        url('MagzoItalic-SemiBold.woff') format('woff'),
+        url('MagzoItalic-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Magzo Alt';
+    src: url('MagzoAlt.eot');
+    src: local('Magzo Alt'), local('MagzoAlt'),
+        url('MagzoAlt.eot?#iefix') format('embedded-opentype'),
+        url('MagzoAlt.woff2') format('woff2'),
+        url('MagzoAlt.woff') format('woff'),
+        url('MagzoAlt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Magzo';
+    src: url('Magzo-Light.eot');
+    src: local('Magzo Italic Light'), local('Magzo-Light'),
+        url('Magzo-Light.eot?#iefix') format('embedded-opentype'),
+        url('Magzo-Light.woff2') format('woff2'),
+        url('Magzo-Light.woff') format('woff'),
+        url('Magzo-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Magzo';
+    src: url('Magzo-Thin.eot');
+    src: local('Magzo Italic Thin'), local('Magzo-Thin'),
+        url('Magzo-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Magzo-Thin.woff2') format('woff2'),
+        url('Magzo-Thin.woff') format('woff'),
+        url('Magzo-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Magzo';
+    src: url('MagzoHeavy.eot');
+    src: local('Magzo Heavy'), local('MagzoHeavy'),
+        url('MagzoHeavy.eot?#iefix') format('embedded-opentype'),
+        url('MagzoHeavy.woff2') format('woff2'),
+        url('MagzoHeavy.woff') format('woff'),
+        url('MagzoHeavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Magzo';
+    src: url('Magzo-Medium.eot');
+    src: local('Magzo Italic Medium'), local('Magzo-Medium'),
+        url('Magzo-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Magzo-Medium.woff2') format('woff2'),
+        url('Magzo-Medium.woff') format('woff'),
+        url('Magzo-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Magzo Italic Alt';
+    src: url('MagzoItalic-Alternate.eot');
+    src: local('Magzo Italic Alt'), local('MagzoItalic-Alternate'),
+        url('MagzoItalic-Alternate.eot?#iefix') format('embedded-opentype'),
+        url('MagzoItalic-Alternate.woff2') format('woff2'),
+        url('MagzoItalic-Alternate.woff') format('woff'),
+        url('MagzoItalic-Alternate.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Magzo';
+    src: url('MagzoItalic-Heavy.eot');
+    src: local('Magzo Italic Heavy'), local('MagzoItalic-Heavy'),
+        url('MagzoItalic-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('MagzoItalic-Heavy.woff2') format('woff2'),
+        url('MagzoItalic-Heavy.woff') format('woff'),
+        url('MagzoItalic-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Magzo';
+    src: url('MagzoMedium.eot');
+    src: local('Magzo Medium'), local('MagzoMedium'),
+        url('MagzoMedium.eot?#iefix') format('embedded-opentype'),
+        url('MagzoMedium.woff2') format('woff2'),
+        url('MagzoMedium.woff') format('woff'),
+        url('MagzoMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Magzo';
+    src: url('Magzo-Thin_1.eot');
+    src: local('Magzo Thin'), local('Magzo-Thin'),
+        url('Magzo-Thin_1.eot?#iefix') format('embedded-opentype'),
+        url('Magzo-Thin_1.woff2') format('woff2'),
+        url('Magzo-Thin_1.woff') format('woff'),
+        url('Magzo-Thin_1.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Magzo';
+    src: url('Magzo-Light_1.eot');
+    src: local('Magzo Light'), local('Magzo-Light'),
+        url('Magzo-Light_1.eot?#iefix') format('embedded-opentype'),
+        url('Magzo-Light_1.woff2') format('woff2'),
+        url('Magzo-Light_1.woff') format('woff'),
+        url('Magzo-Light_1.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Magzo';
+    src: url('MagzoItalic-Regular.eot');
+    src: local('Magzo Italic'), local('MagzoItalic-Regular'),
+        url('MagzoItalic-Regular.eot?#iefix') format('embedded-opentype'),
+        url('MagzoItalic-Regular.woff2') format('woff2'),
+        url('MagzoItalic-Regular.woff') format('woff'),
+        url('MagzoItalic-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Magzo Semi';
+    src: url('Magzo-SemiBold.eot');
+    src: local('Magzo Semi Bold'), local('Magzo-SemiBold'),
+        url('Magzo-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Magzo-SemiBold.woff2') format('woff2'),
+        url('Magzo-SemiBold.woff') format('woff'),
+        url('Magzo-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Magzo';
+    src: url('Magzo.eot');
+    src: local('Magzo'),
+        url('Magzo.eot?#iefix') format('embedded-opentype'),
+        url('Magzo.woff2') format('woff2'),
+        url('Magzo.woff') format('woff'),
+        url('Magzo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

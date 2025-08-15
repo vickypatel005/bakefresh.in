@@ -1,0 +1,346 @@
+@use "../base/variable.scss" as variable;
+@use "../base/mixins.scss" as mixins;
+
+.chef_section {
+    .chef_area {
+        .chef_area_left {
+            .chef_image {
+                width: 550px;
+            }
+        }
+
+        .chef_area_right {
+            .chef_article {
+                font-size: 32px;
+                font-weight: 500;
+                font-family: "magzo", serif;
+                padding-bottom: 40px;
+            }
+
+            .chef_input_area {
+                display: flex;
+                column-gap: 10px;
+                justify-content: space-between;
+                align-items: center;
+                border: 1px solid variable.$gray_shade2;
+                padding: 10px 15px;
+                border-radius: 34px;
+
+                .form-group {
+                    width: 70%;
+                    margin: 0;
+
+                    input {
+                        border: none;
+                        outline: none;
+                        width: 100%;
+                        font-size: 16px;
+                        color: variable.$gray_shade4;
+                        padding-left: 10px;
+                        font-family: "lato", serif;
+                    }
+                }
+
+                .Subscribe_btn {
+                    width: 30%;
+                    flex-shrink: 0;
+
+                    .btn-primary {
+                        width: 200px;
+                        height: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 16px;
+                        transition: all 0.4s ease;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/* Above 1920 desktop */
+@media (min-width: 1920px) {}
+
+/* 1680 desktop */
+@media (min-width: 1680px) and (max-width: 1919px) {}
+
+/* 1600 desktop */
+@media (min-width: 1600px) and (max-width: 1679px) {}
+
+/* Above 1400 and Below 1599 Desktop*/
+@media (min-width: 1400px) and (max-width: 1599px) {}
+
+/* 1300 desktop only */
+@media (min-width: 1300px) and (max-width: 1399px) {
+    .chef_section {
+        .chef_area {
+            .chef_area_left {
+                .chef_image {
+                    width: 490px;
+                }
+            }
+
+            .chef_area_right {
+                .chef_input_area {
+                    padding: 8px 13px;
+                }
+            }
+        }
+    }
+}
+
+/* 1200 desktop only */
+@media (min-width: 1200px) and (max-width: 1299px) {
+    .chef_section {
+        .chef_area {
+            .chef_area_left {
+                .chef_image {
+                    width: 490px;
+                }
+            }
+
+            .chef_area_right {
+                .chef_input_area {
+                    padding: 8px 13px;
+                }
+            }
+        }
+    }
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .chef_section {
+        .chef_area {
+            .chef_area_left {
+                .chef_image {
+                    width: 380px;
+                }
+            }
+
+            .chef_area_right {
+                .chef_article {
+                    font-size: 30px;
+                    padding-bottom: 30px;
+                }
+
+                .chef_input_area {
+                    padding: 9px 13px;
+
+                    .Subscribe_btn {
+                        .btn-primary {
+                            width: 100%;
+                            height: 48px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+    .chef_section {
+        .chef_area {
+            padding-top: 30px;
+
+            .chef_area_left {
+                .chef_image {
+                    width: 280px;
+                }
+            }
+
+            .chef_area_right {
+                .chef_article {
+                    font-size: 25px;
+                    padding-bottom: 30px;
+                }
+
+                .chef_input_area {
+                    padding: 10px 13px;
+
+                    .Subscribe_btn {
+                        .btn-primary {
+                            width: 100%;
+                            height: 38px;
+                            font-size: 13px;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    .chef_section {
+        .chef_area {
+            padding: 40px 40px 90px 40px;
+
+            .chef_area_left {
+                .chef_image {
+                    display: none;
+                }
+            }
+
+            .chef_area_right {
+
+                .chef_article {
+                    font-size: 25px;
+                    padding-bottom: 30px;
+                }
+
+                .chef_input_area {
+                    padding: 14px 12px;
+
+                    .Subscribe_btn {
+                        .btn-primary {
+                            width: 100%;
+                            height: 43px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 575px) {
+    .chef_section {
+        .chef_area {
+            padding-bottom: 60px;
+
+            .chef_area_left {
+                .chef_image {
+                    display: none;
+                }
+            }
+
+            .chef_area_right {
+
+                .chef_article {
+                    font-size: 20px;
+                    padding-bottom: 25px;
+                }
+
+                .chef_input_area {
+                    padding: 0;
+                    flex-direction: column;
+                    row-gap: 20px;
+                    align-items: flex-start;
+                    border: none;
+                    border-radius: unset;
+
+                    .form-group {
+                        width: 100%;
+
+                        input {
+                            border: 1px solid variable.$gray_shade2;
+                            border-radius: 40px;
+                            outline: none;
+                            width: 100%;
+                            font-size: 14px;
+                            color: variable.$gray_shade4;
+                            padding: 14px;
+                        }
+                    }
+
+                    .Subscribe_btn {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .btn-primary {
+                            width: 140px;
+                            height: 40px;
+                            font-size: 13px;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+    .chef_section {
+        .chef_area {
+            padding-bottom: 50px;
+
+            .chef_area_left {
+                .chef_image {
+                    display: none;
+                }
+            }
+
+            .chef_area_right {
+
+                .chef_article {
+                    font-size: 20px;
+                    padding-bottom: 25px;
+                }
+
+                .chef_input_area {
+                    padding: 0;
+                    flex-direction: column;
+                    row-gap: 20px;
+                    align-items: flex-start;
+                    border: none;
+                    border-radius: unset;
+
+                    .form-group {
+                        width: 100%;
+
+                        input {
+                            border: 1px solid variable.$gray_shade2;
+                            border-radius: 40px;
+                            outline: none;
+                            width: 100%;
+                            font-size: 14px;
+                            color: variable.$gray_shade4;
+                            padding: 14px;
+                        }
+                    }
+
+                    .Subscribe_btn {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .btn-primary {
+                            width: 140px;
+                            height: 40px;
+                            font-size: 13px;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {}
+
+
+
+
+/* Add CSS styles for Portrait orientation */
+@media screen and (orientation: portrait) {}
+
+/* Add CSS styles for Landscape orientation */
+@media screen and (orientation: landscape) {}

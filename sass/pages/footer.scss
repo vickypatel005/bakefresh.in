@@ -1,0 +1,504 @@
+@use "../base/variable.scss" as variable;
+@use "../base/mixins.scss" as mixins;
+
+
+.footer_section {
+    background-color: variable.$primary_color;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: -15%;
+        right: 0;
+        left: 0;
+        height: 76px;
+        width: 100%;
+        background-image: url('../images/footer_wave.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+
+    .footer_area {
+        padding-bottom: 98px;
+        padding-top: 45px;
+
+        .footer_logo_area {
+            .footer_image_1 {
+                width: 300px;
+                position: absolute;
+                z-index: 1;
+                bottom: 0;
+            }
+
+            .footer_image_2 {
+                position: relative;
+                width: 160px;
+                top: 96px;
+                z-index: 2;
+                margin: 0 auto;
+            }
+        }
+
+        .footer_link {
+            h3 {
+                font-size: 22px;
+                font-family: 'magzo', sans-serif;
+                font-weight: 700;
+                text-transform: capitalize;
+                color: variable.$White_color;
+                padding-bottom: 18px;
+            }
+
+            ul {
+                li {
+                    font-size: 16px;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    font-family: 'lato', sans-serif;
+                    color: variable.$White_color;
+                    padding-bottom: 15px;
+                    width: fit-content;
+
+                    a {
+                        color: variable.$White_color;
+                        font-size: 16px;
+                        font-weight: 500;
+                        font-family: "Lato", serif;
+                        transition: all 0.2s ease;
+                        display: block;
+                        position: relative;
+
+                        &::after {
+                            content: '';
+                            bottom: -3px;
+                            width: 100%;
+                            height: 1px;
+                            background-color: white;
+                            transform: scaleX(0);
+                            left: 0;
+                            right: 0;
+                            transition: all 0.3s ease;
+                            position: absolute;
+                        }
+
+                        &:hover {
+                            &::after {
+                                transform: scaleX(1);
+                            }
+                        }
+                    }
+
+                    span {
+                        margin-left: 15px;
+                    }
+                }
+            }
+
+            .social_media {
+                display: flex;
+                padding-top: 20px;
+
+                li {
+                    margin-right: 15px;
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 35px;
+                        height: 35px;
+                        background-color: variable.$white;
+                        transition: all 0.8s ease;
+                        border-radius: 100%;
+
+
+                        i {
+                            font-size: 18px;
+                            color: variable.$primary_color;
+                        }
+
+                        &::after {
+                            content: none;
+                        }
+                    }
+
+
+                    a.instagram:hover {
+                        background: linear-gradient(45deg,
+                                #f09433 0%,
+                                #e6683c 25%,
+                                #dc2743 50%,
+                                #cc2366 75%,
+                                #bc1888 100%);
+
+                        i {
+                            color: white;
+                        }
+                    }
+
+                    a.facebook:hover {
+                        background: #29487d;
+
+                        i {
+                            color: white;
+                        }
+                    }
+
+                    a.twitter:hover {
+                        background: #38a1f3;
+
+                        i {
+                            color: white;
+                        }
+                    }
+
+                    a.linkedin:hover {
+                        background: #0077b5;
+
+                        i {
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom_box {
+        background-color: variable.$pink_5;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+
+        p {
+            font-size: 16px;
+            text-align: center;
+            color: variable.$White_color;
+            margin: auto;
+            padding: 10px 0;
+            font-family: 'lato', sans-serif;
+        }
+    }
+}
+
+
+
+
+/* Extra Huge large desktops */
+@media (min-width: 1920px) {}
+
+/* Extra Huge large desktops */
+@media (min-width: 1680px) and (max-width: 1919px) {}
+
+/* Extra Huge large desktops */
+@media (min-width: 1600px) and (max-width: 1679px) {}
+
+/* Extra large desktops and mac laptops*/
+@media (min-width: 1400px) and (max-width: 1599px) {}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .footer_section {
+        &::after {
+            top: -19%;
+        }
+
+        .footer_area {
+            padding-bottom: 85px;
+            padding-top: 40px;
+
+            .footer_logo_area {
+                .footer_image_1 {
+                    width: 260px;
+                }
+
+                .footer_image_2 {
+                    width: 140px;
+                    top: 146px;
+                }
+            }
+        }
+    }
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .footer_section {
+        &::after {
+            top: -19%;
+        }
+
+        .footer_area {
+            padding-bottom: 70px;
+            padding-top: 35px;
+
+            .footer_logo_area {
+                display: none;
+            }
+        }
+    }
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+    .footer_section {
+        &::after {
+            top: -13%;
+            height: 40px;
+        }
+
+        .footer_area {
+            padding-bottom: 60px;
+            padding-top: 12px;
+
+            .footer_logo_area {
+                display: none;
+            }
+
+            .footer_link {
+                h3 {
+                    font-size: 18px;
+                    padding-bottom: 15px;
+                }
+
+                ul {
+                    li {
+                        font-size: 14px;
+                        padding-bottom: 10px;
+
+                        a {
+                            font-size: 14px;
+                        }
+
+                        span {
+                            margin-left: 8px;
+                        }
+                    }
+                }
+
+                .social_media {
+                    padding-top: 15px;
+
+                    li {
+                        margin-right: 10px;
+
+                        a {
+                            width: 32px;
+                            height: 32px;
+
+                            i {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottom_box {
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    .footer_section {
+        &::after {
+            top: -9%;
+            height: 40px;
+        }
+
+        .footer_area {
+            padding-bottom: 60px;
+            padding-top: 20px;
+
+            .footer_logo_area {
+                display: none;
+            }
+
+            .footer_link {
+                h3 {
+                    font-size: 18px;
+                    padding-bottom: 15px;
+                }
+
+                ul {
+                    li {
+                        font-size: 14px;
+                        padding-bottom: 10px;
+
+                        a {
+                            font-size: 14px;
+                        }
+
+                        span {
+                            margin-left: 8px;
+                        }
+                    }
+                }
+
+                .social_media {
+                    padding-top: 5px;
+
+                    li {
+                        margin-right: 12px;
+
+                        a {
+                            width: 30px;
+                            height: 30px;
+
+                            i {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottom_box {
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 575px) {
+    .footer_section {
+        &::after {
+            top: -4%;
+            height: 24px;
+        }
+
+        .footer_area {
+            padding-bottom: 60px;
+            padding-top: 0;
+
+            .footer_logo_area {
+                display: none;
+            }
+
+            .footer_link {
+                h3 {
+                    font-size: 18px;
+                    padding-bottom: 15px;
+                    padding-top: 10px;
+                }
+
+                ul {
+                    li {
+                        font-size: 14px;
+                        padding-bottom: 10px;
+
+                        a {
+                            font-size: 14px;
+                        }
+
+                        span {
+                            margin-left: 8px;
+                        }
+                    }
+                }
+
+                .social_media {
+                    padding-top: 5px;
+                    padding-bottom: 25px;
+
+                    li {
+                        margin-right: 10px;
+
+                        a {
+                            width: 30px;
+                            height: 30px;
+
+                            i {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottom_box {
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+    .footer_section {
+        &::after {
+            top: -4%;
+            height: 24px;
+        }
+
+        .footer_area {
+            padding-bottom: 60px;
+            padding-top: 0;
+
+            .footer_logo_area {
+                display: none;
+            }
+
+            .footer_link {
+                h3 {
+                    font-size: 18px;
+                    padding-bottom: 15px;
+                    padding-top: 10px;
+                }
+
+                ul {
+                    li {
+                        font-size: 14px;
+                        padding-bottom: 10px;
+
+                        a {
+                            font-size: 14px;
+                        }
+
+                        span {
+                            margin-left: 8px;
+                        }
+                    }
+                }
+
+                .social_media {
+                    padding-top: 5px;
+                    padding-bottom: 25px;
+
+                    li {
+                        margin-right: 10px;
+
+                        a {
+                            width: 30px;
+                            height: 30px;
+
+                            i {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottom_box {
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {}
